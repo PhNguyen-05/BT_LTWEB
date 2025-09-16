@@ -105,7 +105,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="${pageContext.request.contextPath}/home">
-                <img src="${pageContext.request.contextPath}/assets/images/logo-starshop.png" alt="StarShop" width="40" height="40" class="me-2">
+                <img src="${pageContext.request.contextPath}/assets/images/logo.jpg" alt="StarShop" width="40" height="40" class="me-2">
                 <span class="fw-bold" style="color: #ff69b4;">StarShop</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

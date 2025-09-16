@@ -2,8 +2,16 @@
 
 
 <sitemesh>
-	<mapping path="/*" name="web" decorator="web.jsp" />
-	<mapping path="/admin/*" name="admin" decorator="admin.jsp" />
-	<!-- Exclude path from decoration. -->
-	<mapping path="/api*" exclude="true" />
+    <!-- Exclude các trang không muốn dùng layout -->
+    <mapping path="/login*" exclude="true"/>
+    <mapping path="/register*" exclude="true"/>
+    <mapping path="/api*" exclude="true" />
+    
+    <!-- Thêm exclude cho direct JSP (nếu cần test trực tiếp) -->
+    <mapping path="/views/login.jsp*" exclude="true"/>
+    <mapping path="/views/register.jsp*" exclude="true"/>
+
+    <!-- Mapping mặc định -->
+    <mapping path="/*" name="web" decorator="web.jsp" />
+    <mapping path="/admin/*" name="admin" decorator="admin.jsp" />
 </sitemesh>
